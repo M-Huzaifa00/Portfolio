@@ -9,8 +9,8 @@ export const NavBar = () => {
     { icon: <AiFillHome/>, desc: 'Home' },
     { icon: <FaUserAlt/>, desc: 'Contacts' },
     { icon: <MdLocationOn/>, desc: 'Skill' },
-    { icon: <BiSolidBriefcase/>, desc: 'Projects' },
-    { icon: <BsFillEnvelopeFill/>, desc: 'Mail' }
+    { icon: <BiSolidBriefcase/>, desc: 'Project' },
+    { icon: <BsFillEnvelopeFill/>, desc: 'Link' }
   ]
   return (
     <NavIcons iconArray={iconMap} />
