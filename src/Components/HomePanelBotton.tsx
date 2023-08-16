@@ -44,8 +44,8 @@ export const HomePanelBotton = () => {
                         md: '1rem'
                     }}
                 >
-                    Wellcome, <span style={{ color: '#FF08E8' }} > I'm programmer and visionary full stack web developer </span> based in Pakistan.With my unrenowned
-                    skills and passions for innovation,I'have been <span style={{ color: '#FF08E8' }}>evolutionizing the digital landscape</span> ,and
+                    Wellcome, <span style={{ color: '#FF08E8' }} > I'm programmer and visionary full stack web developer </span> based in Pakistan. With my unrenowned
+                    skills and passion for innovation,I'have been <span style={{ color: '#FF08E8' }}>evolutionizing the digital landscape,</span> and
                     looking for more opportunities.
                 </Text>
             </VStack>
