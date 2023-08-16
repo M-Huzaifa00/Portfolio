@@ -9,8 +9,8 @@ import { DiCodeigniter } from 'react-icons/di'
 const codingSkill = [
     { id: 1, icon: <BsFront />, heading: "Frontend Development", detail: "i bring ideas to life in browser." },
     { id: 2, icon: <FaPuzzlePiece />, heading: "API Development", detail: "Crafting API's,turning ideas in functional solutions." },
-    { id: 3, icon: <BsCodeSlash />, heading: "Backend Development", detail: "Building a powerfull backend is my motto." },
-    { id: 4, icon: <BsDatabaseFillGear />, heading: "DATABASE", detail: "I possess good knowledge of relational base data-base as well as mongo db no sql." },
+    { id: 3, icon: <BsCodeSlash />, heading: "Backend Development", detail: "Building a powerful backend is my motto." },
+    { id: 4, icon: <BsDatabaseFillGear />, heading: "DATABASE", detail: "I possess good knowledge of ER based data-base as well as mongo db no sql." },
     { id: 5, icon: <DiCodeigniter/>, heading: "C++", detail: "I possess solid grip in c++ programming." },
 ]
 

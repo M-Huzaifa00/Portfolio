@@ -22,7 +22,7 @@ export const CvButton = () => {
                 colorScheme='messenger' variant='solid'
                 onClick={handleDownload}
                 >
-                grab my cv
+                Grab my CV
             </Button>
         </HStack>
     )

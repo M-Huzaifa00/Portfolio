@@ -19,7 +19,7 @@ export const RightSideContact = () => {
       <Text
        data-aos='fade-left'
        fontSize={{ base: '10px', md: '1rem', lg: '1.2rem' }}
-      >Hey there! I'm M Huzaifa Abdulahad, a 20-year-old programmer and full stack web developer
+      >Hey there! I'm M. Huzaifa Abdulahad, a 20-year-old programmer and full stack web developer
         hailing from the charming state of Chakwal, Pakistan. My passion lies in crafting
         visually stunning interfaces through React, paired with either Chakra UI or Tailwind CSS.
         With a hunger for learning, I eagerly dive into new technologies and frameworks to stay at
