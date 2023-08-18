@@ -15,13 +15,14 @@ export const LeftSideContact = () => {
   
     const { colorMode } = useColorMode();
     const imageChange = colorMode === 'light' ? BlackImg : whiteImg ;
+    const flag = colorMode === 'dark' ? 'drop-shadow(2px 2px 5px #FF08E8)' : undefined;
 
   return (
     <Box data-aos="fade-right"
     
      width={{base:'90%', md: '80%', lg: '50%'}}
     >
-        <Image   width={'100%'} src={imageChange} />
+        <Image filter={flag}  width={'100%'} src={imageChange} />
     </Box>
   )
 }

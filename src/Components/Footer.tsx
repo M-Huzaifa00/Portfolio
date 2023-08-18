@@ -3,6 +3,7 @@ const date = new Date();
 
 
 export const Footer = () => {
+  
   return (
     <Box  width={"100%"} alignItems={'center'} 
     display={'flex'} justifyContent={'center'}
@@ -13,8 +14,8 @@ export const Footer = () => {
         <Text
         fontFamily={'ubuntu'}
         fontSize={{base:'12px' , md:'16px'}}
-        
-        >made with ❤️ by <span style={{color:'#FF08E8' , fontStyle:"bolder"}} >M Huzaifa</span></Text>
+                
+        >made with ❤️ by <span style={{fontFamily:'ubuntu' , color:'#FF08E8' , fontStyle:"900"}} >M Huzaifa</span></Text>
      <Text
      width={"100%"}
      textAlign={'center'}
