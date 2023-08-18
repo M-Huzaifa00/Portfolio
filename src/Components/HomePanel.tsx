@@ -9,7 +9,7 @@ import { HomePanelBotton } from "./HomePanelBotton";
 export const HomePanel = () => {
     const { colorMode } = useColorMode();
     const adjustImage = colorMode === 'light' ? BlackImage : WhiteImage;
-    const flag = colorMode === 'dark' ? 'drop-shadow(2px 2px 7px #FF08E8)' : undefined;
+    const flag = colorMode === 'dark' ? 'drop-shadow(2px 2px 12px #FF08E8)' : undefined;
     return (
         <>
             <SimpleGrid display={'flex'} justifyContent={'center'} >

@@ -8,7 +8,7 @@ import { useColorMode } from '@chakra-ui/react';
 export const LeftSideLink = () => {
     const { colorMode } = useColorMode();
     const changeImg = colorMode === 'light' ? blackBeard : whiteBeard ;
-    const flag = colorMode === 'dark' ? 'drop-shadow(2px 2px 7px #FF08E8)' : undefined;
+    const flag = colorMode === 'dark' ? 'drop-shadow(2px 2px 12px #FF08E8)' : undefined;
   return (
     <Box width={{md:'50%'}}
     padding={{base:2,md:0}}
