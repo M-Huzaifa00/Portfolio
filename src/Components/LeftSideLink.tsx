@@ -13,7 +13,9 @@ export const LeftSideLink = () => {
     <Box width={{md:'50%'}}
     padding={{base:2,md:0}}
      >
-        <Image filter={flag}  src={changeImg} />
+        <Image 
+        className='customAnimation'
+        filter={flag}  src={changeImg} />
     </Box> 
    )
 }

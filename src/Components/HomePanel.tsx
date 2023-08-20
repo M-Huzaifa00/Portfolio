@@ -4,8 +4,6 @@ import WhiteImage from '../assets/png white.png'
 import { HomePanelBotton } from "./HomePanelBotton";
 
 
-
-
 export const HomePanel = () => {
     const { colorMode } = useColorMode();
     const adjustImage = colorMode === 'light' ? BlackImage : WhiteImage;
