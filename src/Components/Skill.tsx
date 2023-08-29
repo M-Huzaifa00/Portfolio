@@ -1,4 +1,4 @@
-import { SimpleGrid, Heading, HStack, Button, VStack } from "@chakra-ui/react"
+import { SimpleGrid, Heading, HStack, Button, VStack, Box} from "@chakra-ui/react"
 import { BsFront, BsCodeSlash , BsDatabaseFillGear} from "react-icons/bs"
 import { FaPuzzlePiece ,  FaLightbulb} from "react-icons/fa"
 import { SkillCard } from "./SkillCard";
@@ -6,6 +6,8 @@ import { useState } from "react";
 import { BiMessageRounded } from 'react-icons/bi'
 import { AiOutlineUsergroupAdd } from 'react-icons/ai'
 import { DiCodeigniter } from 'react-icons/di'
+import { useInViewPort } from "./Hook/useInViewPort";
+import { useShifterStore } from "../Zustand/useShifterStore";
 const codingSkill = [
     { id: 1, icon: <BsFront />, heading: "Frontend Development", detail: "i bring ideas to life in browser." },
     { id: 2, icon: <FaPuzzlePiece />, heading: "API Development", detail: "Crafting API's,turning ideas in functional solutions." },
@@ -28,13 +30,18 @@ const codingSkill2 = [
 export const Skill = () => {
     const [renderCoding, setRenderCoding] = useState<boolean>(true)
     const [renderSkill, setRenderSkill] = useState<boolean>(false)
-
+    const { InViewPort } =  useInViewPort("Sk")
+    const setSkill = useShifterStore( s=> s.setSkill )
+    setSkill(InViewPort)
+     
     return (
-        <>
+        <Box  >
             <VStack 
             paddingX={4}
             >
                 <Heading 
+                            id="Sk"
+
                 fontSize={ { base:'4xl' , lg:'6xl'}}
                 fontFamily={'ubuntu'}
                 textAlign={'center'}>Proficiencies</Heading>
@@ -75,7 +82,7 @@ export const Skill = () => {
 
             </SimpleGrid>
 
-        </>
+        </Box>
 
     )
 }

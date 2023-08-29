@@ -25,7 +25,8 @@
     "react-simple-typewriter": "^5.0.1",
     "react-spring": "^9.7.2",
     "react-type-animation": "^3.1.0",
-    "vercel": "^31.2.3"
+    "vercel": "^31.2.3",
+    "zustand": "^4.4.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
