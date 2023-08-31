@@ -14,7 +14,7 @@ interface shifter {
 }
 
 export const useShifterStore = create<shifter>((set) => ({
-  Home: false,
+  Home: true,
   Contact: false,
   Skill: false,
   Project: false,
