@@ -35,11 +35,11 @@ export const ProjectCard = ({ id, imgUrl, title, detail, gitLink, Live }: Props)
                 </Stack>
             </CardBody>
             <Divider />
-            <CardFooter display={'flex'} justifyContent={'center'} gap={2} >
+            <CardFooter display={'flex'} justifyContent={'center'} gap={2} fontSize={{base:'xs' , lg:'md'}} >
                 <Button
                     fontFamily={'ubuntu'}
                     bgColor={'blackAlpha.200'}
-                    size={'md'}
+                    size={{base:'xs' , lg:'md'}}
                     rightIcon={<AiFillGithub />}
                     onClick={() => handleClick(gitLink)}
                 >Github</Button>
@@ -47,7 +47,7 @@ export const ProjectCard = ({ id, imgUrl, title, detail, gitLink, Live }: Props)
                     Live && <Button
                         fontFamily={'ubuntu'}
                         bgColor={'blackAlpha.200'}
-                        size={{base:'sm' , md:'md'}}
+                        size={{base:'xs' , lg:'md'}}
                         rightIcon={<VscLiveShare />}
                         onClick={() => handleClick(Live)}
                     >Live</Button>
