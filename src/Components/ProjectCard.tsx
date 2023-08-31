@@ -20,8 +20,8 @@ export const ProjectCard = ({ id, imgUrl, title, detail, gitLink, Live }: Props)
         <Card
             data-aos={id > 0 ? "zoom-in" : undefined}
             padding={{ base: 0, md: 2 }} maxWidth={'300px'}>
-            <CardBody>
-                <Image objectFit={'cover'} src={imgUrl} />
+            <CardBody padding={2} >
+                <Image width={'100%'} objectFit={'cover'} src={imgUrl} />
                 <Stack mt={4} spacing={'3'}>
                     <Heading fontFamily={'ubuntu'}
                         fontSize={{ base: '10px', md: '16px' }} >{title}</Heading>
@@ -35,7 +35,7 @@ export const ProjectCard = ({ id, imgUrl, title, detail, gitLink, Live }: Props)
                 </Stack>
             </CardBody>
             <Divider />
-            <CardFooter display={'flex'} justifyContent={'center'} gap={2} fontSize={{base:'xs' , lg:'md'}} >
+            <CardFooter borderRadius={'12px'} display={'flex'} justifyContent={'center'} gap={2} fontSize={{base:'xs' , lg:'md'}} >
                 <Button
                     fontFamily={'ubuntu'}
                     bgColor={'blackAlpha.200'}
