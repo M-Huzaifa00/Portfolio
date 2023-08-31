@@ -21,7 +21,7 @@ export const ProjectCard = ({ id, imgUrl, title, detail, gitLink, Live }: Props)
             data-aos={id > 0 ? "zoom-in" : undefined}
             padding={{ base: 0, md: 2 }} maxWidth={'300px'}>
             <CardBody>
-                <Image objectFit={'contain'} src={imgUrl} />
+                <Image objectFit={'cover'} src={imgUrl} />
                 <Stack mt={4} spacing={'3'}>
                     <Heading fontFamily={'ubuntu'}
                         fontSize={{ base: '10px', md: '16px' }} >{title}</Heading>
