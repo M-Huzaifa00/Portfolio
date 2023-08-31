@@ -7,9 +7,9 @@ import { useInViewPort } from './Hook/useInViewPort';
 import { useShifterStore } from '../Zustand/useShifterStore';
 
 const projectData = [
-    { id: 1, imgUrl: gameHub, title: 'GameHub', detail: 'A gaming database created using RAWG API in react js.', gitLink: 'https://github.com/M-Huzaifa00/game-hub' },
-    { id: 2, imgUrl: HMS, title: 'Hotel Management System', detail: 'Full HMS using C++ fundamentals.', gitLink: 'https://github.com/M-Huzaifa00/Hotel-Management-system' },
-    { id: 3, imgUrl: DBMS, title: 'Mini DataBase', detail: 'A Data was built with c++ OOP concepts that accepts queries.', gitLink: 'https://github.com/M-Huzaifa00/DATABASE' }
+    { id: 1, imgUrl: gameHub, title: 'GameHub', detail: 'A gaming database created using RAWG API in react js.', gitLink: 'https://github.com/M-Huzaifa00/Game-Fusion' , Live:'https://game-hub-kappa-ochre.vercel.app/' },
+    { id: 2, imgUrl: HMS, title: 'Hotel Management System', detail: 'Full HMS using C++ fundamentals.', gitLink: 'https://github.com/M-Huzaifa00/Hotel-Management-system' , Live:undefined }, 
+    { id: 3, imgUrl: DBMS, title: 'Mini DataBase', detail: 'A Data was built with c++ OOP concepts that accepts queries.', gitLink: 'https://github.com/M-Huzaifa00/DATABASE', Live:undefined }
 ]
 
 
@@ -40,7 +40,7 @@ export const Project = () => {
                 }}
             >
                 {
-                    projectData.map(({ id, imgUrl, title, detail, gitLink }) => <ProjectCard key={id} id={id} imgUrl={imgUrl} title={title} detail={detail} gitLink={gitLink} />)
+                    projectData.map(({ id, imgUrl, title, detail, gitLink , Live}) => <ProjectCard key={id} Live={Live} id={id} imgUrl={imgUrl} title={title} detail={detail} gitLink={gitLink} />)
                 }
             </SimpleGrid>
         </>
