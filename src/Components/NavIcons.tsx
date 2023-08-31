@@ -25,7 +25,6 @@ export const NavIcons = ({ iconArray }: Props) => {
 
     const { colorMode } = useColorMode();
     const changeBg = colorMode === 'light' ? '#fff' : 'gray.900';
-    iconArray.map(item => console.log(item.desc, item.flag))
     return (
         <HStack
             bgColor={changeBg}
