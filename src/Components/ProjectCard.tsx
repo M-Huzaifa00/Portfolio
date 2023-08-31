@@ -47,7 +47,7 @@ export const ProjectCard = ({ id, imgUrl, title, detail, gitLink, Live }: Props)
                     Live && <Button
                         fontFamily={'ubuntu'}
                         bgColor={'blackAlpha.200'}
-                        size={'md'}
+                        size={{base:'sm' , md:'md'}}
                         rightIcon={<VscLiveShare />}
                         onClick={() => handleClick(Live)}
                     >Live</Button>
